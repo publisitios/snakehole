@@ -3,8 +3,8 @@ var express = require("express");
 var app = express();
 
 // global variables
-var client_ID = "xaviercr"
-var redirect_URI = "http://xavierf.software/" 
+var CLIENT_ID = "xaviercr"
+var REDIRECT_URI = "http://xavierf.software/" 
 
 var URL = "https://api.instagram.com/oauth/authorize/?client_id="+CLIENT_ID+"&redirect_uri="+REDIRECT_URI+"&response_type=code";
 
