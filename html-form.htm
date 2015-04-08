@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>SnakeHole APP</title>
+<link rel="stylesheet" href="http://cdn.foundation5.zurb.com/foundation.css">
+<style>
+body { 
+  background: url(/instagram.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#goback { 
+  height: 104px; 
+  width: 104px; 
+  position: fixed; 
+  top: 40%; 
+  z-index: 999;
+}
+
+#goback a { 
+  display: block; 
+  background: #008CBA; 
+  color: #fff; 
+  font-family: Arial, sans-serif; 
+  font-size: 17px; 
+  padding: 10px;
+}
+
+#goback a:hover { 
+  background: #007095; 
+}
+
+.result{
+	background-color: #F0F0F0 ;
+	margin: 20px;
+	padding: 20px;
+}
+</style>
+</head>
+<body>
+<center>
+<h1> Welcome to the SnakeHole APP!</h1>
+<h3> Enter the name of the product or brand you would like to look up on Instagram</h3>
+<form method="GET" action="/result" >
+
+<input placeholder="Enter the tag you want to search for..." required type="text" name="tag" style="width:50%;" />
+
+<button>Show Me!</button>
+
+</form>
+</center>
+</body>
+</html>	

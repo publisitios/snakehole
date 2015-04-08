@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Instagram bookmark for : {{tag}} </title>
+<link rel="stylesheet" href="http://cdn.foundation5.zurb.com/foundation.css">
+<style>
+body { 
+  background: url(/instagram.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#goback { 
+  height: 104px; 
+  width: 104px; 
+  position: fixed; 
+  top: 40%; 
+  z-index: 999;
+}
+
+#goback a { 
+  display: block; 
+  background: #008CBA; 
+  color: #fff; 
+  font-family: Arial, sans-serif; 
+  font-size: 17px; 
+  padding: 10px;
+}
+
+#goback a:hover { 
+  background: #007095; 
+}
+
+.result{
+	background-color: #F0F0F0 ;
+	margin: 20px;
+	padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<div id="goback">
+  <a href="/">New Search</a>
+</div>
+
+<center>
+	<h1><b>Instagram Bookmark for : {{tag}} </b></h1>
+	<h1>This Instagram post has been bookmarked:</h1>{{id}}<br/><h3><a href="{{URL}}"><b>Click Here</b></a> to go back to the results page.</h3>
+</center>
+
+</body>
+</html>	

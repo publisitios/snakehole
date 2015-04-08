@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>Instagram results for : {{tag}} </title>
+<link rel="stylesheet" href="http://cdn.foundation5.zurb.com/foundation.css">
+<style>
+body { 
+  background: url(/instagram.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#goback { 
+  height: 104px; 
+  width: 104px; 
+  position: fixed; 
+  top: 40%; 
+  z-index: 999;
+}
+
+#goback a { 
+  display: block; 
+  background: #008CBA; 
+  color: #fff; 
+  font-family: Arial, sans-serif; 
+  font-size: 17px; 
+  padding: 10px;
+}
+
+#goback a:hover { 
+  background: #007095; 
+}
+
+.result{
+	background-color: #F0F0F0 ;
+	margin: 20px;
+	padding: 20px;
+}
+</style>
+</head>
+<body>
+<div id="goback">
+  <a href="/">New Search</a>
+</div>
+
+	<center>
+		<h1><b>Instagram results for : {{tag}} </b></h1>
+
+		{{#data}}
+		 	<div class="result">
+			 	<a href="{{link}}" target="_blank" >
+			 	<h4>{{caption.text}}</h4>
+				<img src="{{images.low_resolution.url}}" />
+				</a>
+				<form action="/bookmark">
+					<input type="hidden" name="id" value="{{link}}" />
+					<input type="hidden" name="tag" value="{{tag}}" />
+					<button>Bookmark this!</button>
+				</form>
+			</div>
+		{{/data}}
+</body>
+</html>	

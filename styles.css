@@ -1,0 +1,34 @@
+html { 
+  background: url(instagram.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#goback { 
+  height: 104px; 
+  width: 104px; 
+  position: fixed; 
+  top: 40%; 
+  z-index: 999;
+}
+
+#goback a { 
+  display: block; 
+  background: #008CBA; 
+  color: #fff; 
+  font-family: Arial, sans-serif; 
+  font-size: 17px; 
+  padding: 10px;
+}
+
+#goback a:hover { 
+  background: #007095; 
+}
+
+.result{
+	background-color: #F0F0F0 ;
+	margin: 20px;
+	padding: 20px;
+}
